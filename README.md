@@ -1,1 +1,1 @@
-The code will be release in the early July.
+Code will be released in the early July.
