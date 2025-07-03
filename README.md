@@ -54,7 +54,7 @@ For our evaluation, we first generate a set of images and then report the unlear
 ## TODO:
 We will upload the model checkpoints later.
 
-## Refrence
+## Citation
 if you find this repo is helpful, please cite
 ```
 @article{li2025sculpting,
