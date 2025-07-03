@@ -52,5 +52,15 @@ For `multi_dst_train.py`:
 For our evaluation, we first generate a set of images and then report the unlearning accuracy (or, alternatively, the nudity‐detection results), as well as the CLIP score and the Fréchet Inception Distance (FID). We have a sample log in `multi_class_logs/logs_example.log`
 
 ## TODO:
-We will upload the model checkpoints in huggingface later.
+We will upload the model checkpoints later.
 
+## Refrence
+if you find this repo is helpful, please cite
+```
+@article{li2025sculpting,
+  title={Sculpting Memory: Multi-Concept Forgetting in Diffusion Models via Dynamic Mask and Concept-Aware Optimization},
+  author={Li, Gen and Xiao, Yang and Ji, Jie and Deng, Kaiyuan and Hui, Bo and Guo, Linke and Ma, Xiaolong},
+  journal={arXiv preprint arXiv:2504.09039},
+  year={2025}
+}
+```
