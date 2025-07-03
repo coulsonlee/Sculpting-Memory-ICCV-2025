@@ -1,0 +1,46 @@
+Example Logs for demonstration
+2025-07-03 14:54:06,847 - INFO - Starting training with hyperparameters:
+2025-07-03 14:54:06,848 - INFO - num_epochs: 1, warmup_steps: 2, mask_update_interval: 100
+2025-07-03 14:54:06,848 - INFO - update_percent_dict: {'q': 0.5, 'k': 0.5, 'v': 0.5, 'to_out': 0.5}, mask_metric: gradient, lr: 3e-06
+2025-07-03 14:54:06,848 - INFO - Accelerator mixed_precision: no, weight_dtype: torch.float32
+2025-07-03 14:54:06,848 - INFO - decay:True,initial_turnover_fraction:0.2
+2025-07-03 14:54:06,848 - INFO - Only_ca: True,decay:True,mask update:True,scle:0.25,scale_kd:0.25
+2025-07-03 14:54:06,900 - INFO - Epoch 1/1 starting...
+2025-07-03 14:54:09,713 - INFO - class:chain saw Warmup finished. Updating masks for each CrossAttention module...
+2025-07-03 14:55:22,921 - INFO - Starting training with hyperparameters:
+2025-07-03 14:55:22,921 - INFO - num_epochs: 1, warmup_steps: 2, mask_update_interval: 100
+2025-07-03 14:55:22,921 - INFO - update_percent_dict: {'q': 0.5, 'k': 0.5, 'v': 0.5, 'to_out': 0.5}, mask_metric: gradient, lr: 3e-06
+2025-07-03 14:55:22,921 - INFO - Accelerator mixed_precision: no, weight_dtype: torch.float32
+2025-07-03 14:55:22,921 - INFO - decay:True,initial_turnover_fraction:0.2
+2025-07-03 14:55:22,921 - INFO - Only_ca: True,decay:True,mask update:True,scle:0.25,scale_kd:0.25
+2025-07-03 14:55:22,975 - INFO - Epoch 1/1 starting...
+2025-07-03 14:55:25,822 - INFO - class:chain saw Warmup finished. Updating masks for each CrossAttention module...
+2025-07-03 14:56:27,753 - INFO - Epoch 1 finished with average loss: 0.00907145
+2025-07-03 14:56:27,756 - INFO - Epoch 1 (align loss) finished with average loss: 0.00199069
+2025-07-03 14:56:27,756 - INFO - New best loss achieved: 0.00907145 (previous best was inf)
+2025-07-03 14:56:30,675 - INFO - Saved new best UNet checkpoint to ./multi_class_models/10_classes_models/unet_epoch_1_chain saw.pt
+2025-07-03 14:56:30,675 - INFO - ---------------start from best ckpt for next round unlearn-----------------
+2025-07-03 14:56:32,209 - INFO - Epoch 1/1 starting...
+2025-07-03 14:56:33,300 - INFO - class:garbage truck Warmup finished. Updating masks for each CrossAttention module...
+2025-07-03 14:57:36,154 - INFO - Epoch 1 finished with average loss: 0.00373326
+2025-07-03 14:57:36,156 - INFO - Epoch 1 (align loss) finished with average loss: 0.00236577
+2025-07-03 14:57:36,157 - INFO - New best loss achieved: 0.00373326 (previous best was inf)
+2025-07-03 14:57:38,417 - INFO - Saved new best UNet checkpoint to ./multi_class_models/10_classes_models/unet_epoch_1_garbage truck.pt
+2025-07-03 14:57:38,417 - INFO - ---------------start from best ckpt for next round unlearn-----------------
+2025-07-03 14:57:39,808 - INFO - Epoch 1/1 starting...
+2025-07-03 14:57:40,902 - INFO - class:gas pump Warmup finished. Updating masks for each CrossAttention module...
+2025-07-03 14:58:44,087 - INFO - Epoch 1 finished with average loss: 0.00960583
+2025-07-03 14:58:44,089 - INFO - Epoch 1 (align loss) finished with average loss: 0.00065463
+2025-07-03 14:58:44,090 - INFO - New best loss achieved: 0.00960583 (previous best was inf)
+2025-07-03 14:58:46,176 - INFO - Saved new best UNet checkpoint to ./multi_class_models/10_classes_models/unet_epoch_1_gas pump.pt
+2025-07-03 14:58:46,176 - INFO - ---------------start from best ckpt for next round unlearn-----------------
+2025-07-03 14:58:46,976 - INFO - ---------------training finished-----------------
+2025-07-03 14:58:46,976 - INFO - ---------------generate images for each class-----------------
+2025-07-03 14:59:06,917 - INFO - generation finished
+2025-07-03 14:59:07,175 - INFO - Class [chain_saw]: 1/1 correct, acc = 1.0000
+2025-07-03 14:59:07,189 - INFO - Class [garbage_truck]: 1/1 correct, acc = 1.0000
+2025-07-03 14:59:07,203 - INFO - Class [gas_pump]: 1/1 correct, acc = 1.0000
+2025-07-03 14:59:07,204 - INFO - Overall accuracy: 1.0000
+2025-07-03 14:59:08,133 - INFO - Folder [chain saw] with text prompt 'a photo of chain saw': Average CLIP score = 0.3215
+2025-07-03 14:59:08,155 - INFO - Folder [garbage truck] with text prompt 'a photo of garbage truck': Average CLIP score = 0.3199
+2025-07-03 14:59:08,172 - INFO - Folder [gas pump] with text prompt 'a photo of gas pump': Average CLIP score = 0.2777
