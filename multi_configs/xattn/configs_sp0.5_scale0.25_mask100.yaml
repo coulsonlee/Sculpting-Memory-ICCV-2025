@@ -1,0 +1,31 @@
+# config.yaml
+model_id: "CompVis/stable-diffusion-v1-4"
+data_path: "./multi_class_data_100_sd"
+batch_size: 2
+image_size: 512
+update_mask: True
+device: "0"
+method: "dst"
+unlearn_class: 10
+
+train_params:
+  num_epochs: 10
+  warmup_steps: 50
+  mask_update_interval: 100
+  update_percent_dict:
+    q: 0.5
+    k: 0.5
+    v: 0.5
+    to_out: 0.5
+  mask_metric: "gradient"
+  warmup: True
+  ca: True
+  decay: True
+  scale: 0.25
+  scale_kd: 0.25
+  initial_turnover_fraction: 0.2
+  lr: 3e-6
+  save_path: "./multi_class_models/10_classes_models"
+  mixed_precision: null
+  log_file: "./multi_class_logs/log_10_classes.log"
+  img_save_path: "./multi_class_images/10_classes_img"
